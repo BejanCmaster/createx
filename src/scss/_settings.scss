@@ -152,12 +152,23 @@ a {
 
   &--fill {
     background-color: var(--primary-color);
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: var(--red-color);
+    }
   }
 
   &--stroke {
+    transition: background-color 0.3s ease-in-out;
 
     &-light {
       border-color: var(--light-color);
+
+      &:hover {
+        border-color: var(--primary-color);
+        background-color: var(--primary-color)
+      }
     }
   }
 }
@@ -191,4 +202,66 @@ a {
   padding-top: 120px;
 }
 
+.centered {
+  width: 100%;
+  text-align: center;
+}
 
+.costum-checkbox {
+
+  &__input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  &__text {
+    display: inline-block;
+    position: relative;
+    padding-left: 27px;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-color);
+  }
+
+  &__text::before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 1px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--primary-color);
+    border-radius: 3px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  &__text::after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 1px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/check.svg);
+    background-position: center;
+    background-size: 10px 8px;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &__input:checked + &__text::before {
+    background-color: var(--primary-color);
+  }
+
+  &__input:checked + &__text::after {
+    opacity: 1;
+  }
+
+  &__input:focus + &__text {
+
+  }
+
+}
