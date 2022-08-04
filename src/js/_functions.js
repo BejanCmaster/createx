@@ -3,7 +3,7 @@
 
 // Определение операционной системы на мобильных
 import { mobileCheck } from "./functions/mobile-check";
-console.log(mobileCheck())
+
 
 // Определение ширины экрана
 // import { isMobile, isTablet, isDesktop } from './functions/check-viewport';
@@ -52,7 +52,7 @@ console.log(mobileCheck())
 // Подключение свайпера
 // import Swiper, { Navigation, Pagination } from 'swiper';
 // Swiper.use([Navigation, Pagination]);
-//c onst swiper = new Swiper(el, {
+// const swiper = new Swiper(el, {
 //    slidesPerView: 'auto',
 // });
 

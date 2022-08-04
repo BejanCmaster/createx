@@ -266,9 +266,4 @@ a {
   &__input:checked + &__text::after {
     opacity: 1;
   }
-
-  &__input:focus + &__text {
-
-  }
-
 }

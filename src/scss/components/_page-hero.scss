@@ -1,6 +1,8 @@
 .page-hero {
   padding-top: 153px;
-  padding-bottom: 179px;
+  padding-bottom: 80px;
+  min-height: 600px;
+  background-position: right -8px top;
   background-color: #f4f5f7;
   background-image: url("../img/services-hero-bg.png");
   background-position: right -8px top;
@@ -28,5 +30,14 @@
     font-size: 20px;
     line-height: 150%;
     color: var(--stormgray-color);
+  }
+
+  &--services {
+    background-image: url("../img/services-1-hero-bg.png");
+
+  }
+
+  &--services-inner {
+    background-image: url("../img/services-1-hero-bg.png");
   }
 }
