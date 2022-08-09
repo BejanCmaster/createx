@@ -34,8 +34,8 @@ import { mobileCheck } from "./functions/mobile-check";
 // const modal = new GraphModal();
 
 // Реализация табов
-// import GraphTabs from 'graph-tabs';
-// const tabs = new GraphTabs('tab');
+ //import GraphTabs from 'graph-tabs';
+ //const tabs = new GraphTabs('tab');
 
 // Получение высоты шапки сайта (не забудьте вызвать функцию)
 // import { getHeaderHeight } from './functions/header-height';
@@ -84,3 +84,4 @@ import { mobileCheck } from "./functions/mobile-check";
 // };
 
 // validateForms('.form-1', rules1, afterForm);
+

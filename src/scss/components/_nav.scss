@@ -16,6 +16,10 @@
     color: var(--gray-color);
     transition: color 0.3s ease-in-out;
 
+    &--current {
+      color: var(--primary-color);
+    }
+
     &:hover {
       color: var(--primary-color);
     }
