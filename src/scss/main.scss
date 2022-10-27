@@ -7,6 +7,7 @@
 //компонентов страницы
 @import "./components/slider-nav";
 @import "./components/form-field";
+@import "./components/social";
 
 
 // подключения компонентов страницы
@@ -40,11 +41,15 @@
 @import "./components/worldwide";
 @import "./components/positions-content";
 @import "./components/employee-benefits";
+@import "./components/hero-news";
+@import "./components/categories";
+
+
 // подключения компонентов страницы малинкие компоненты
 @import "./components/nav";
 @import "./components/header-contacts";
 @import "./components/video-block";
 @import "./components/breadcrumbs";
 @import "./components/learn-more";
-@import "./components/social";
 @import "./components/work-images";
+@import "./components/news-article";
