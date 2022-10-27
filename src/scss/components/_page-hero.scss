@@ -66,4 +66,10 @@
     background-color: var(--light-color);
     background-image: url("../img/about-bg.png");
   }
+
+  &--positions {
+    background-position: right -9px bottom;
+    background-color: var(--light-color);
+    background-image: url("../img/hero-positions.png");
+  }
 }
