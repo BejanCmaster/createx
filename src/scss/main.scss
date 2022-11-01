@@ -43,7 +43,11 @@
 @import "./components/employee-benefits";
 @import "./components/hero-news";
 @import "./components/categories";
-
+@import "./components/post";
+@import "./components/post-comments";
+@import "./components/post-form";
+@import "./components/contacts-form";
+@import "./components/contacts-info";
 
 // подключения компонентов страницы малинкие компоненты
 @import "./components/nav";
@@ -53,3 +57,4 @@
 @import "./components/learn-more";
 @import "./components/work-images";
 @import "./components/news-article";
+@import "./components/comment";
