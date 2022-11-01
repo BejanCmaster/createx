@@ -51,6 +51,7 @@
     0 12px 10px -6px rgba(154, 156, 165, 0.04),
     0 4px 4px -4px rgba(30, 33, 44, 0.03);
   background: var(--light-color);
+  transition: transform 0.3s ease-in-out;
 
   &__content {
     display: flex;
@@ -95,5 +96,18 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: var(--primary-color);
+    transition: 0.3s ease-in-out;
+    will-change: margin;
+  }
+
+  &:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    .portfolio-item__btn {
+      margin-bottom: 0;
+    }
   }
 }

@@ -1,8 +1,9 @@
 import Swiper, {
-  Navigation, Thumbs
+  Autoplay,
+  Navigation, Pagination, Thumbs
 } from 'swiper';
 
-Swiper.use([Navigation, Thumbs]);
+Swiper.use([Navigation, Thumbs, Pagination, Autoplay]);
 
 const portSlider = document.querySelector('.portfolio-section__items');
 const relatedSlider = document.querySelector('.related-project__items');
@@ -206,3 +207,37 @@ if (historySlider) {
     });
   });
 }
+
+const heroSliderSpeed = 1500;
+
+const bodyStyles = window.getComputedStyle(document.body);
+const fooBar = bodyStyles.getPropertyValue('--hero-slider-speed');
+
+document.body.style.setProperty('--hero-slider-speed', heroSliderSpeed + 'ms');
+
+
+const heroSlider = new Swiper('.hero-slider', {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.hero__next',
+    prevEl: '.hero__prev',
+  },
+  speed: heroSliderSpeed,
+  autoplay: {
+    delay: 1000,
+  },
+  pagination: {
+    el: '.hero__pag',
+    type: 'bullets',
+    clickable: true
+  },
+  on: {
+    init: function () {
+      const paginationBullets = document.querySelectorAll('.hero__pag .swiper-pagination-bullet');
+
+      paginationBullets.forEach(el => {
+        el.innerHTML = `<span class="hero__bar"></span>`;
+      });
+    },
+  },
+});

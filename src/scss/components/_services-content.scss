@@ -76,5 +76,14 @@
   &__link {
     padding: 11px 27px;
     letter-spacing: normal;
+
+    &:focus {
+      border: 2px solid var(--primary-color);
+    }
+
+    &:hover {
+      background-color: var(--red-color);
+      color: var(--light-color);
+    }
   }
 }

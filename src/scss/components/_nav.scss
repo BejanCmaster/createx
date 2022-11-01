@@ -20,8 +20,17 @@
       color: var(--primary-color);
     }
 
+    &:focus {
+      outline: 2px solid var(--primary-color);
+      outline-offset: 2px;
+    }
+
     &:hover {
       color: var(--primary-color);
+    }
+
+    &:active {
+      color: var(--active-color);
     }
   }
 }
