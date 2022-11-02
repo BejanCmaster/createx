@@ -4,10 +4,19 @@
   &__left {
     width: calc(100% - 630px);
     padding-right: 30px;
+
+    @include tablet {
+      margin-bottom: 20px;
+      width: 100%;
+    }
   }
 
   &__right {
     width: 630px;
+
+    @include tablet {
+      width: 100%;
+    }
   }
 
   &__author {
@@ -32,6 +41,25 @@
     font-size: 16px;
     line-height: 160%;
     color: var(--gray-color);
+
+    a {
+      font-weight: 700;
+      color: var(--primary-color);
+      transition: color 0.3s ease-in-out;
+
+      &:focus {
+        outline: 2px solid var(--primary-color);
+        outline-offset: 2px;
+      }
+
+      &:hover {
+        color: var(--active-color);
+      }
+
+      &:active {
+        color: var(--active-color);
+      }
+    }
 
     * {
       margin: 0;
@@ -67,5 +95,23 @@
       object-fit: cover;
       fill: currentColor;
     }
+
+    &:focus {
+      outline: 2px solid var(--primary-color);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      color: var(--active-color);
+    }
+
+    &:active {
+      color: var(--active-color);
+    }
+  }
+
+  @include tablet {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

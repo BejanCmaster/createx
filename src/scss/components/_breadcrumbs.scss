@@ -3,7 +3,7 @@
 
   &__item {
     position: relative;
-    
+
     &:not(:last-child) {
       margin-right: 22px;
 
@@ -25,5 +25,22 @@
     &:not([href]) {
       color: #9a9ca5;
     }
+
+    &:focus {
+      outline: 2px solid var(--primary-color);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      color: var(--primary-color);
+    }
+
+    &:active {
+      color: var(--active-color);
+    }
+  }
+
+  @include minitablet {
+    flex-wrap: wrap;
   }
 }
